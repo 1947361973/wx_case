@@ -1,0 +1,2 @@
+input{border: 2rpx solid #000;}
+.login{background: red;}

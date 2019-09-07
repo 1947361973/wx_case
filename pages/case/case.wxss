@@ -1,0 +1,11 @@
+/* pages/case/case.wxss */
+.danmu{border: 2rpx solid #000;}
+.map_redme{color: red;}
+#myMap{width:100%;margin-bottom: 30rpx;}
+#myVideo{width:100%;}
+.esc{background: green;}
+.poster {
+  width: 100%;
+  height: 800rpx;
+  margin: 20rpx;
+}

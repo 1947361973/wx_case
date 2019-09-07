@@ -1,0 +1,68 @@
+ 
+
+<view class='line toutiao'>
+    <image class="toutiao-img" src="/images/hjh.jpg" background-size="cover"></image>
+    <view class='two-line-text'>
+      <text class='text-center txt1'>明仕鹏</text>
+      <text class="text-center txt2">等级：普通会员</text>
+      <text class="text-center txt3">手机：【绑定手机号码】</text>
+    </view>
+</view>
+
+<navigator url='/pages/car_goods/car_goods'>
+  <view class="wx-cells">
+    <view class="wx-cell">
+      <image class="wx-cell-icon"src="/images/sys01.png"></image>
+      <text class="wx-cell-text" bindtap="case">我的订单--编程式跳转->case</text>
+      <image class="wx-cell-arrow" src="/images/right.png"></image>
+    </view>
+  </view>
+</navigator>
+
+<navigator url='/pages/huiyuan/addr/index'>
+  <view class="wx-cells">
+    <view class="wx-cell">
+      <image class="wx-cell-icon"src="/images/sys02.png"></image>
+      <text class="wx-cell-text">收货地址管理</text>
+      <image class="wx-cell-arrow" src="/images/right.png"></image>
+    </view>
+  </view>
+</navigator>
+
+<navigator url='/pages/huiyuan/qita/01-shoucang'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/sys03.png"></image>
+    <text class="wx-cell-text">我的收藏</text>
+    <image class="wx-cell-arrow" src="/images/right.png"></image>
+  </view>
+</view>
+</navigator>
+
+<navigator url='/pages/huiyuan/qita/02-wenti'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/sys06.png"></image>
+    <text class="wx-cell-text">常见问题</text>
+    <image class="wx-cell-arrow" src="/images/right.png"></image>
+  </view>
+</view>
+</navigator>
+
+<navigator url='/pages/huiyuan/qita/03-kefu'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/sys05.png"></image>
+    <text class="wx-cell-text">联系客服</text>
+    <image class="wx-cell-arrow" src="/images/right.png"></image>
+  </view>
+</view>
+</navigator>
+
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/sys04.png"></image>
+    <text class="wx-cell-text" bindtap="login">退出登陆</text>
+    <image class="wx-cell-arrow" src="/images/right.png"></image>
+  </view>
+</view>

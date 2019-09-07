@@ -1,0 +1,13 @@
+<!--轮播图-->
+<swiper 
+  indicator-dots="{{true}}"
+  autoplay="{{true}}" 
+  interval="{{1000}}" 
+  duration="{{100}}"
+>
+  <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <navigator url="{{'/pages/goods/goods?id='+item._id}}">
+      <image src="{{item.banner}}" class="slide-image" bindtap="bannerTo"/> 
+    </navigator>
+  </swiper-item>
+</swiper>

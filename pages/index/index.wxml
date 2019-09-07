@@ -1,0 +1,117 @@
+<!--轮播图-->
+<!-- <swiper 
+  indicator-dots="{{true}}"
+  autoplay="{{true}}" 
+  interval="{{1000}}" 
+  duration="{{100}}"
+>
+  <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <navigator url="{{'/pages/goods/goods?id='+item._id}}">
+      <image src="{{item.banner}}" class="slide-image" bindtap="bannerTo"/> 
+    </navigator>
+  </swiper-item>
+</swiper> -->
+<product api="list/" item="{{item}}"></product>
+<!-- nav导航 -->
+<view class='navs'>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu01.png' class='nav-image'></image>
+    <text>品牌大全</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu02.png' class='nav-image'></image>
+    <text>最新上架</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu03.png' class='nav-image'></image>
+    <text>用户中心</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu04.png' class='nav-image'></image>
+    <text>订单列表</text>
+    </navigator>
+  </view>        
+</view>
+<view class='navs'>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu05.png' class='nav-image'></image>
+    <text>留言反馈</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu06.png' class='nav-image'></image>
+    <text>活动列表</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu07.png' class='nav-image'></image>
+    <text>帮助中心</text>
+    </navigator>
+  </view>
+  <view class='nav-item'>
+    <navigator url='/pages/list_goods/list_goods' open-type="switchTab">
+    <image src='/images/menu08.png' class='nav-image'></image>
+    <text>关于我们</text>
+    </navigator>  
+  </view> 
+</view>
+
+<!--最新产品————标题--> 
+<view class='text'>
+  <view class='line_y'></view>
+  <text>最新产品</text>
+</view>
+<!--最新产品————产品列表--> 
+<view class="goods_hot_div">
+  <view class="goods_hot_box">
+    <view class="goods_hot" wx:for="{{list}}" wx:if="{{index<12}}" wx:key="{{index}}">
+      <image src="{{item.product}}" class='goods_hot_img'></image>
+      <text class="goods_hot_title">{{item.name}}</text>
+      <text class="goods_hot_pirce">￥{{item.price}}</text>
+    </view>
+  </view>
+</view>
+
+<!--1一行2列布局：左竖线右文字--> 
+<view class='text'>
+  <view class='line_y'></view>
+  <text>精品推荐</text>
+</view>
+<!--精品推荐-1行2列图片-不带文字-->
+<view class='cps2'>
+  <navigator class='cp-item2' wx:for="{{list}}" wx:if="{{index<4}}" wx:key="{{index}}" bindtap='clickGoods'
+  url="{{'/pages/goods/goods?id='+item._id}}">
+    <image src="{{item.product}}" class='cp-image2'></image>
+    <text>{{item.name}}</text>
+    <text>{{item.price}}</text>
+  </navigator>
+</view>
+
+
+<!--1一行2列布局：左竖线右文字--> 
+<view class='text'>
+  <view class='line_y'></view>
+  <text>销售排行</text>
+</view>
+<!-- 销售排行 1行2列：左图片，右文字（多行文字）--> 
+<navigator class='line'wx:for="{{list}}" wx:if="{{index>4&&index<8}}" wx:key="{{index}}"
+ url="{{'/pages/goods/goods?id='+item._id}}">
+  <image src="{{item.product}}" class='toutiao-img'></image>
+  <view class='two-line-text'>
+    <text class='text-center txt1'>{{item.name}}</text>
+    <text class='txt2'>{{item.activity}}</text>
+    <text class='txt3'>{{item.price}}</text>
+  </view>
+</navigator>
+
+

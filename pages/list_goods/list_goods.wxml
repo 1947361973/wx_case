@@ -1,0 +1,22 @@
+<view class="container flex-wrap flex-direction-row">
+	<!-- left aside -->
+	<view class="aside flex-wrap flex-direction-col"  style="height:{{winHeight}}px">
+		<block wx:for="{{navList}}" wx:key="{{index}}">
+			<text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</text>
+		</block>
+	</view>
+
+	<!-- content -->
+	<view class="content flex-item">  <view class="cps">
+		<block wx:for="{{dishesList[curIndex]}}" wx:key="{{index}}">
+      
+
+        <view class="cp-item" ><navigator url='/pages/index/index' open-type="switchTab">
+          <image src='{{item.img}}' class="cp-image"/><text>{{item.name}}</text><text>￥：{{item.price}}</text></navigator>
+        </view> 
+
+      
+		</block></view>
+	</view>
+
+</view>

@@ -1,0 +1,10 @@
+<view id="login">
+  <view class="head">
+    <button bindtap="login">前往登陆</button>
+  </view>
+  <form bindsubmit="reg">
+    <input name="userName" placeholder="请输入账号"></input>
+    <input password name="password" placeholder="请输入密码"></input>
+    <button form-type="submit" class="reg">注册</button>
+  </form>
+</view>

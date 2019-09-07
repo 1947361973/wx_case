@@ -1,0 +1,46 @@
+<button bindtap="esc" class="esc">回退</button>
+<button bindtap="toast">测试</button>
+<navigation-bar/>
+<view>媒体操作</view>
+<video 
+  id="myVideo" 
+  src="{{src}}" 
+  danmu-list="{{danmuList}}" 
+  enable-danmu 
+  danmu-btn 
+  controls
+></video>
+
+<button bindtap="bindButtonTap">获取视频</button>  
+<input bindblur="bindInputBlur" class="danmu" placeholder="弹幕输入框"/>
+<button bindtap="bindSendDanmu">发送弹幕</button>
+
+<view>录音测试</view>
+<button bindtap="startRecord">开始录音</button>
+<button bindtap="stopRecord">停止录音</button>
+<button bindtap="play">播放录音</button>
+
+<view>地图测试</view>
+<view class="map_redme">地图需要在app.json文件中配置permission</view>
+<map id="myMap" show-location />
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+
+<view>自定以组建全局引入</view>
+<img
+    src="https://www.baidu.com/img/bd_logo1.png?where=super"
+    data-thumb="/img/cp01.jpg"
+    data-retry="{{1}}"
+    data-lazy="{{true}}"
+    show-menu-by-longpress="{{false}}"
+    mode="scaleToFill"
+    bind:fail="onFail"
+    bind:update="onUpdate"
+    height="高度"
+/>
+
+<!-- 点击图片放大 -->
+<image class="poster" src="{{photos[0]}}" bindtap='clickImage'/>

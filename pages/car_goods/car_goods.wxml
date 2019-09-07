@@ -1,0 +1,96 @@
+<scroll-view class="foodList" scroll-y="true">
+
+  <view class="food">
+    <image class="img" src="/img/cp01.jpg"></image>
+    <view class="food-info">
+       <view class="name">珀莱雅水动力护肤品套装</view>
+       <view class="sales">月售：11 件 / 库存：121件</view>
+       <view class="price">￥：129.00</view>
+    </view>
+    <view class="food-numb">
+       <view class="remove" bindtap="myjian" hidden=""   data-jiage="10">-</view>
+       <text class="mytext" hidden="">2</text>
+       <view class="add"   bindtap="myjia" data-jiage="10">+</view>
+    </view>
+  </view>
+
+
+        <view class="food">
+          <image class="img" src="/img/cp02.jpg"></image>
+          <view class="food-info">
+            <view class="name">HFP秋冬季补水保湿亮肤套装</view>
+            <view class="sales">月售：231 件 / 库存：11件
+            </view>
+            <view class="price">￥ 398.00</view>
+          </view>
+          <view class="food-numb">
+            <view class="remove" bindtap="myjian" hidden=""   data-jiage="10">-</view>
+            <text class="mytext" hidden="">1</text>
+            <view class="add"   bindtap="myjia" data-jiage="10">+</view>
+          </view>
+        </view>   
+
+        <view class="food">
+          <image class="img" src="/img/cp03.jpg"></image>
+          <view class="food-info">
+            <view class="name">自然堂水润洗面奶水乳护肤品套装</view>
+            <view class="sales">月售：31 件 / 库存：230件
+            </view>
+            <view class="price">￥ 178.00</view>
+          </view>
+          <view class="food-numb">
+            <view class="remove" bindtap="myjian" hidden=""   data-jiage="10">-</view>
+            <text class="mytext" hidden="">1</text>
+            <view class="add"   bindtap="myjia" data-jiage="10">+</view>
+          </view>
+        </view>   
+
+       <view class="food">
+          <image class="img" src="/img/cp11.jpg"></image>
+          <view class="food-info">
+            <view class="name">珀莱雅水动力护肤品套装</view>
+            <view class="sales">月售：11 件 / 库存：121件
+            </view>
+            <view class="price">￥：129.00</view>
+          </view>
+          <view class="food-numb">
+            <view class="remove" bindtap="myjian" hidden=""   data-jiage="10">-</view>
+            <text class="mytext" hidden="">2</text>
+            <view class="add"   bindtap="myjia" data-jiage="10">+</view>
+          </view>
+        </view>
+        
+
+        <view class="food">
+          <image class="img" src="/img/cp12.jpg"></image>
+          <view class="food-info">
+            <view class="name">HFP秋冬季补水保湿亮肤套装</view>
+            <view class="sales">月售：231 件 / 库存：11件
+            </view>
+            <view class="price">￥ 398.00</view>
+          </view>
+          <view class="food-numb">
+            <view class="remove" bindtap="myjian" hidden=""   data-jiage="10">-</view>
+            <text class="mytext" hidden="">1</text>
+            <view class="add"   bindtap="myjia" data-jiage="10">+</view>
+          </view>
+        </view>   
+
+
+</scroll-view>
+
+
+
+
+<view class='footer active'>
+
+  <view class='howMuch ' style='width:70%'>
+    <view class='img' style='background:#FFD161'>
+      <image src='/images/sp02.png' style='width:60rpx; height:60rpx'></image>
+    </view>  
+    <view class='cost'>￥：253.00</view>    
+  </view>
+
+  <view class='pay' style='width:30%'>去结算</view>
+
+</view>

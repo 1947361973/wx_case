@@ -1,0 +1,92 @@
+/*头部样式*/
+.line{
+    display: flex;
+    margin: 1rpx;
+    border: #ddd solid 1px;
+    padding: 1rpx;
+}
+.toutiao{
+    padding: 10rpx;
+ background-color:  crimson;
+}
+.toutiao-img{
+    width: 80px;
+    height: 80px;
+     margin: 20rpx;
+      border-radius: 50%;
+}
+.two-line-text{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    margin: 0 auto;
+}
+
+.txt1{
+    margin: 3px 3px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; color: white;
+}
+.txt2{
+    margin: 5px 3px 5px;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap; background-color:  darkorange;
+}
+.txt3{
+    margin: 3px 3px;
+    font-size: 15px;
+   color: white;
+    white-space: nowrap;
+}
+
+
+.wx-cells {
+  width: 100%;
+  margin-top: 15rpx;
+  font-size: 34rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  background-color: #fff;
+}
+.wx-cell {
+  padding: 20rpx 25rpx;
+  display: flex;
+  align-items: center;
+}
+.wx-cell-icon{
+  width: 56rpx;
+  height: 56rpx;
+}
+.wx-cell-text{
+  flex: 1;
+  margin-left: 30rpx;
+}
+.wx-cell-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+
+.wx-cell-inner{
+  padding: 30rpx 30rpx 30rpx 0;  
+  margin-left: 30rpx; 
+  border-bottom: 1rpx solid #d9d9d9; 
+}
+
+.wx-cell-left{
+  font-size: 35rpx;
+  align-items: center;
+}
+
+.wx-cell-right{
+  align-items: center;
+}
+
+.wx-cell-right-text{
+  font-size: 30rpx;
+  color: #808080;
+}
